@@ -1,0 +1,113 @@
+.sb-show-main.sb-main-padded{
+    background: #fafafa;
+   
+}
+.nav-item {
+    box-shadow: none;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    padding-left: 10%;
+    margin-left: auto;
+    width: 80%;
+    text-align: left;
+    text-transform:capitalize;
+    font: normal normal 600 20px/27px IBM Plex Sans;
+    letter-spacing: 0.2px;
+    color: var(--black);
+    border-radius: 0;
+}
+
+.nav-item.nav-item-hover{
+    background-color: var(--gray1);
+    border-radius: 13px 0px 0px 13px;
+}
+
+.nav-item:hover{
+    background-color: var(--appBgColor);
+    border-radius: 13px 0px 0px 13px;
+}
+.nav-item.nav-item-active {
+    box-shadow: inset 4px 0px 5px #00000029;
+    border-radius: 13px 0px 0px 13px;
+    background-color: var(--appBgColor);
+    
+   }
+
+/* 'nav-item--active': this.active,
+'nav-item--rounded': this.rounded, */
+
+.sidebar.menu.navholder{
+    /* background: #FFFFFF 0% 0% no-repeat padding-box; */
+    /* box-shadow: inset 0px 3px 10px #00000029; */
+    opacity: 1;
+    width: 100%; 
+    height: 100vh;
+    justify-content: flex-start;
+    max-width: 303px;
+    display: flex; 
+    position: fixed;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.site-title{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    font: normal normal 600 20px/27px IBM Plex Sans;
+    letter-spacing: 1px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.logo{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    font: normal normal 600 20px/27px IBM Plex Sans;
+    letter-spacing: 1px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.main-nav{
+    background-color: var(--menuBackground);
+    position: fixed;
+    width: 100%;
+}
+
+
+.slide-enter-active,
+    .slide-leave-active
+    {
+        transition: transform 0.2s ease;
+    }
+
+    .slide-enter,
+    .slide-leave-to {
+        transform: translateX(-100%);
+        transition: all 150ms ease-in 0s
+    }
+
+    .sidebar-backdrop {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    .sidebar-panel {
+        overflow-y: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999;
+        padding: 3rem 20px 2rem 20px;
+        margin-top: 10%;
+        width: 300px;
+    }

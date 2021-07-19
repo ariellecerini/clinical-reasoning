@@ -1,0 +1,70 @@
+<template>
+
+
+<div id="app">
+ <nav class="main-nav">
+    
+     <Burger></Burger>
+   </nav>
+    <Sidebar class="sidebar menu navholder">
+     <div class="site-title">{{ title }}</div>
+        <div class="menu-items">
+            <menu-item @onClick="onClick" v-bind="{ active: true, hover: false, label: 'profile' }"/>
+            <menu-item @onClick="onClick" v-bind="{ active: false, hover: false, label: 'summary' }"/>
+            <menu-item @onClick="onClick" v-bind="{ active: false, hover: false, label: 'timeline' }"/>
+            <menu-item @onClick="onClick" v-bind="{ active: false, hover: false, label: 'insights' }"/>
+        </div> 
+   </Sidebar>
+
+        
+
+<!-- onclick function needs to be added 
+        set all 'active' props to false except for the menu item that was clicked 
+        switch the displayed info to the page that corresponds with the menu item
+    -->
+    
+    </div>
+</template>
+
+<script>
+import '../MenuItem/Menu.css';
+import MenuItem from '../MenuItem/MenuItem.vue';
+import Burger from '../MenuItem/Burger.vue';
+import Sidebar from '../SidePanel/Sidebar.vue';
+// import '../../../assets/normalize.css'
+
+export default {
+ name: 'side-panel',
+  components: { 
+      MenuItem,
+      Burger, 
+      Sidebar 
+      },
+ props: {
+     title: {
+      type: String,
+      required: true
+    }
+ }
+}
+</script>
+
+<style scoped>
+ .main-nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem 0.8rem;
+ }
+
+ ul.sidebar-panel-nav {
+   list-style-type: none;
+ }
+
+ ul.sidebar-panel-nav > li > a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   display: block;
+   padding-bottom: 0.5em;
+ }
+</style>

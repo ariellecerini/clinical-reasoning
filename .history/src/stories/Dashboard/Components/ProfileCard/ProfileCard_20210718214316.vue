@@ -1,0 +1,55 @@
+<template>
+  <Card class="card">
+   <div class="profile-card">
+       <div class="left-side">
+            <div class="profile-image">
+                    <img :src="profile.image"> 
+                </div> 
+
+            {{name}}
+        </div> 
+
+        <div class="right-side">
+            <div v-for="item in profile" :key="item">
+                <div v-for="(value, name) in item" :key="name">
+                   <ListItem :entry="profFormatted(name, key)"/>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+  </Card>
+</template>
+
+<script>
+import '../../dashboard.css';
+import Card from '../Card/Card.vue';
+import ListItem from '../ListItem/ListItem.vue';
+import _ from 'lodash'
+// import '../../../assets/normalize.css'
+
+// import '../../../assets/style.css'
+
+export default {
+  name: 'profile-card',
+  components: { Card, ListItem },
+  props: {
+    title: {
+      type: String,
+      required: true,
+      default: "Insert Title Here"
+    }, 
+    profile:{
+      type: Array, 
+      required: true
+    }
+  },
+  computed:{
+    profFormatted(name, value){
+      var comp = name + ": " + value; 
+      return comp;
+    
+    }
+  } 
+};
+</script>

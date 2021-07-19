@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="row dashboard bodycontent">
                                     <div style="width: 66%; padding: 0;">
-                                        <info-module v-bind="{title: 'Chart 1'}"/>
+                                        <info-module v-bind="{title: 'Chart 1', content: sampleData }"/>
                                     </div>
                                     <div style="width: 33%;">
                                         <info-module v-bind="{title: 'Chart1'}"/>
@@ -62,7 +62,7 @@ export default {
         title: String
     }, 
    data(){
-      
+     console.log(sampleData);
         return{
             data: profileData,
             sample: sampleData

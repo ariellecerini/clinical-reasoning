@@ -62,7 +62,7 @@ export default {
         title: String
     }, 
    data(){
-      
+     console.log(sampleData);
         return{
             data: profileData,
             sample: sampleData

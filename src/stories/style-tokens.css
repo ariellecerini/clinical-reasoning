@@ -1,0 +1,307 @@
+
+ :root {
+
+/* color variables */ 
+    --white: #ffffff; 
+    --Gray10: #f4f4f4;
+    --Gray10-hover: #e5e5e5; 
+    --Gray20: #d8d8d8;
+    --Gray20-hover: #cacaca;
+    --Gray30: #c6c6c6;
+    --Gray40: #727272; 
+    --Gray50: #8d8d8d; 
+    --Gray60: #5d5d5d;
+    --Gray70: #525252;
+    --Gray80: #4c4c4c;
+    --Gray100: #333333;
+    --black: #333333; 
+
+    --warning: #fff080;
+    
+    --lightTeal: #edfeff;
+    --Teal: #d7f4f5;
+    --darkTeal: #115f6c; 
+
+    --lightBlue: #ecf2fc;
+    --Blue: #dbe6f8; 
+    --darkBlue: #2f3b51;
+
+    --lightOrange: #fff9f0;
+    --Orange: #ffeed6; 
+    --darkOrange: #ef6a42; 
+
+    --RPI-Red-10: #d5d5d5;
+    --RPI_Red-50: #d58570; 
+    --RPI_Red-60: #d6001c;
+    --RPI_Red-80: #ab2328; 
+    --RPI_Red-100: #ae0006;
+
+    --RPI_Blue-25: #a5b0cb; 
+    --RPI_Blue-50: #667ba2; 
+    --RPI_Blue-75: #2b517f; 
+    --RPI_Blue-100: #00205b; 
+
+    --RPI_Teal-25: #d4e6e8; 
+    --RPI_Teal-50: #b3d3d5; 
+    --RPI_Teal-75: #94c0c6; 
+    --RPI_Teal-100: #7fa9ae; 
+
+    /* UI Background Colors */ 
+     --ui-background: var(--Gray10);
+     --ui-01: var(--white);
+     --ui-02: var(--Gray10);
+     --ui-03: var(--Gray30);
+     --ui-04: var(--Gray50);
+     --ui-05: var(--Gray100);
+
+    /* Interactive Colors */ 
+     --interactive-01: var(--RPI_Red-50);
+     --interactive-02: var(--Gray80);
+     --interactive-03: var(--RPI_Blue-50);
+     --interactive-04: var(--RPI_Blue-50);
+
+    /* Text Colors */ 
+     --text-01: var(--Gray100);
+     --text-02: var(--Gray80);
+     --text-03: var(--Gray40);
+     --text-04: var(--white);
+     --text-05: var(--Gray60);
+
+     /* Link Colors */ 
+     --link-01: var(--RPI_Blue-50);
+
+     /* Icon Colors */ 
+     --icon-01: var(--Gray100);
+     --icon-02: var(--Gray70);
+     --icon-03: var(--white);
+
+     /* Field Colors */ 
+     --field-01: var(--Gray10);
+     --field-02: var(--white);
+
+     /* Inverse Colors */ 
+     --inverse-01: var(--white);
+     --inverse-02: var(--Gray70);
+
+     /* Support */
+     --support-01: var(--RPI_Red-80); /* error reporting */ 
+     --support-02: var(--RPI_Teal-100); /* Success */ 
+     --support-03: var(--warning); 
+     --support-04: var(--RPI_Blue-75);
+
+     --inverse-support-01: var(--RPI_Red-50);
+     --inverse-support-02: var(--RPI_Teal-50);
+     --inverse-support-03: var(--warning); 
+     --inverse-support-04: var(--RPI_Blue-50);
+
+     --inverse-link: var(--lightBlue);
+
+     --overlay-01: #3333337c; 
+
+     --danger: var(--RPI_Red-60); 
+
+    /* Interactive Tokens */ 
+     --focus: var(--RPI_Blue-25);
+
+        /* Hover Colors */ 
+         --hover-primary: var(--RPI_Blue-75);
+         --hover-primary-text: var(--white);
+         --hover-secondary: var(--Gray10-hover);
+         --hover-tertiary: var(--RPI_Blue-75);
+         --hover-ui: var(--Gray10);
+         --hover-row: var(--Gray20);
+         --hover-danger: var(--RPI_Red-80);
+
+        /* Active Colors */ 
+         --active-primary: var(--RPI_Blue-100); 
+         --active-secondary: var(--Gray10-hover);
+         --active-tertiary: var(--RPI_Blue-100);
+         --active-ui: var(--Gray10);
+         --active-danger: var(--RPI_Red-100);
+
+
+    --selected-ui: var(--Gray100);
+    --highlight: var(--Gray20);
+    --visited-link: var(--RPI_Blue-50);
+    
+        /* Disabled Colors */ 
+         --Disabled-01: var(--Gray10);
+         --Disabled-02: var(--Gray30);
+         --Disabled-03: var(--Gray30);
+    
+    --hover-selected-ui: var(--Gray20);
+
+/* Font Variables */ 
+
+    /* font families */ 
+    --font-family-primary: IBM Plex Sans; 
+    --font-family-code: IBM Plex Mono; 
+
+   
+    /* letter spacing */ 
+     --letter-spacing-01: 0; 
+     --letter-spacing-02: .16px; 
+     --letter-spacing-03: .32px; 
+     --letter-spacing-04: 0.07px; 
+
+    /* line height */ 
+     --line-height-01: 1.125rem; 
+     --line-height-02: 1.375rem;
+     --line-height-03: 1.625rem; 
+     --line-height-04: 2.25rem;
+     --line-height-05: 2.5rem;
+     --line-height-06: 3.125rem;
+     --line-height-07: 4rem; 
+     --line-height-08: 1.5rem;
+     --line-height-09: 1.0rem; 
+     --line-height-10: 1.25rem; 
+
+    /* font weight */ 
+     --font-weight-light: 300; 
+     --font-weight-regular: 400; 
+     --font-weight-semibold: 600; 
+     --font-weight-bold: 800; 
+
+
+/* Box Shadows */ 
+    --box-shadow-inset-01: inset 0px 0px 2px #00000029;
+    --box-shadow-inset-o2: inset 0px 0px 3px #00000029;
+
+ }
+
+
+
+/*Type Styling */ 
+
+    /* Headings */ 
+    .productive-heading-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.875rem; 
+        line-height: var(--line-height-01);
+        font-weight: var(--font-weight-semibold); 
+        letter-spacing: var(--letter-spacing-02);
+    }
+
+    .productive-heading-02{
+        font-family: var(--font-family-primary);
+        font-size: 1.0rem; 
+        line-height: var(--line-height-02);
+        font-weight: var(--font-weight-semibold); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    .productive-heading-03{
+        font-family: var(--font-family-primary);
+        font-size: 1.25rem; 
+        line-height: var(--line-height-03);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    .productive-heading-04{
+        font-family: var(--font-family-primary);
+        font-size: 1.75rem; 
+        line-height: var(--line-height-04);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    .productive-heading-05{
+        font-family: var(--font-family-primary);
+        font-size: 2.0rem; 
+        line-height: var(--line-height-05);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    .productive-heading-06{
+        font-family: var(--font-family-primary);
+        font-size: 2.625rem; 
+        line-height: var(--line-height-06);
+        font-weight: var(--font-weight-light); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    .productive-heading-07{
+        font-family: var(--font-family-primary);
+        font-size: 3.375rem; 
+        line-height: var(--line-height-07);
+        font-weight: var(--font-weight-light); 
+        letter-spacing: var(--letter-spacing-01);
+    }
+
+    /* Body */ 
+    .body-short-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.857rem; 
+        line-height: var(--line-height-01);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-02);
+    }
+
+    .body-long-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.857rem; 
+        line-height: var(--line-height-01);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-02);
+    }
+
+    .body-short-02{
+        font-family: var(--font-family-primary);
+        font-size: 1rem; 
+        line-height: var(--line-height-02);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-01); 
+    }
+
+    .body-long-02{
+        font-family: var(--font-family-primary);
+        font-size: 1rem; 
+        line-height: var(--line-height-08);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-01); 
+    }
+
+    /* Productive Text */ 
+    .code-01{
+        font-family: var(--font-family-code);
+        font-size: 1rem; 
+        line-height: var(--line-height-09);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-03);
+    }
+
+    .code-02{
+        font-family: var(--font-family-code);
+        font-size: 0.875rem; 
+        line-height: var(--line-height-10);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-03);
+    }
+
+    .label-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.75rem; 
+        line-height: var(--line-height-09);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-03);
+    }
+
+    .caption-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.75rem; 
+        line-height: var(--line-height-09);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-03);
+    }
+
+    .helper-text-01{
+        font-family: var(--font-family-primary);
+        font-size: 0.75rem; 
+        line-height: var(--line-height-09);
+        font-weight: var(--font-weight-regular); 
+        letter-spacing: var(--letter-spacing-03);
+    }
+
+    

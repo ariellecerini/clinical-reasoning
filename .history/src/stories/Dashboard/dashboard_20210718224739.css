@@ -1,0 +1,29 @@
+.card{
+    background: var(--cardBackground) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 0px 6px #00000029;
+    border-radius: 13px;
+    width: 90%; 
+    height: 100%;
+    padding: 25px;
+    margin: auto;
+}
+
+h3.card-title.dashboard{
+    text-align: left;
+    font: normal normal bold 16px/20px IBM Plex Sans;
+    letter-spacing: 0.18px;
+    color: var(--black);
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 0;
+}
+
+.listItem{
+    border-bottom: 1px solid var(--gray4); 
+    text-align: left;
+    font: normal normal 400 16px/20px IBM Plex Sans;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+    opacity: 1;
+    padding: 2% 0; 
+}

@@ -18,7 +18,7 @@
                                         <profile-card :profile='data'/>
                                     </div>
                                      <div class="four-col">
-                                        <info-module v-bind="{title: 'Chart 1', content: data}"/>
+                                        <info-module v-bind="{title: 'Chart 1', content: sample}"/>
                                     </div>
                                      <div class="four-col">
                                         <info-module v-bind="{title: 'Chart 1', content: data}"/>
@@ -62,7 +62,7 @@ export default {
         title: String
     }, 
    data(){
-      
+     console.log(sampleData);
         return{
             data: profileData,
             sample: sampleData

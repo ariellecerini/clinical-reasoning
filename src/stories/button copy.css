@@ -1,0 +1,92 @@
+.storybook-button {
+  font-family: IBM Plex Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  font: normal normal normal 14px/18px IBM Plex Sans;
+  text-transform: capitalize;
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: 0.02px;
+}
+.storybook-button--primary {
+  background: var(--interactive-01);
+  box-shadow: inset 0px 3px 6px #00000029;
+  border-radius: 6px;
+  border: none;
+  font-weight: 400;
+  color: var(--text-04); 
+  text-align: left;
+  opacity: 1;
+}
+
+.storybook-button--primary:hover {
+  background-color: var(--hover-primary);
+  font-weight: 600;
+}
+
+.storybook-button--primary:active {
+  background-color: var(--active-primary);
+  font-weight:400;
+}
+
+/* .storybook-button--primary:focus {
+  background-color: #667BA2;
+  border: 3px solid #A5B0CA;
+} */
+
+.storybook-button--primary:disabled{
+  background: var(--Disabled-01);
+  color: var(--Disabled-02);
+  font-weight:400;
+
+}
+
+
+
+.storybook-button--secondary {
+  color: var(--black);
+  background: var(--ui-02);
+  box-shadow: inset 0px 0px 7px #00000029;
+  border-radius: 6px;
+  opacity: 1;
+  color: var(--interactive-02);
+  font-weight:400;
+
+}
+
+.storybook-button--secondary:hover {
+  background-color: var(--hover-secondary);
+  font-weight: 600;
+}
+
+.storybook-button--secondary:active {
+  background-color: var(--active-secondary);
+  font-weight:400;
+}
+
+/* .storybook-button--secondary:focus {
+  background-color: white;
+  border: 3px solid #A5B0CA;
+} */
+
+.storybook-button--secondary:disabled{
+  background: var(--Disabled-01);
+  color: var(--Disabled-02);
+  font-weight:400;
+
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

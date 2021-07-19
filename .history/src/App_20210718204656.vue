@@ -14,16 +14,18 @@
                             </div>
                             
                                 <div class="row dashboard bodycontent" style="padding-bottom: 40px;">
-                                    <div class="two-col">
-                                        <profile-card :profile='data'/>
+                                    <div class="four-col">
+                                        <profile-card :profile='{data}'/>
                                     </div>
                                      <div class="four-col">
-                                        <info-module v-bind="{title: 'Chart 1', content: data}"/>
+                                        <info-module v-bind="{title: 'Chart 1'}"/>
                                     </div>
                                      <div class="four-col">
-                                        <info-module v-bind="{title: 'Chart 1', content: data}"/>
+                                        <info-module v-bind="{title: 'Chart 1'}"/>
                                     </div>
-                                     
+                                     <div class="four-col">
+                                        <info-module v-bind="{title: 'Chart 1'}"/>
+                                    </div>
                               
                                 </div>
                                 <div class="row dashboard bodycontent">
@@ -31,7 +33,7 @@
                                         <info-module v-bind="{title: 'Chart 1'}"/>
                                     </div>
                                     <div style="width: 33%;">
-                                        <info-module v-bind="{title: 'Chart1'}"/>
+                                        <info-module v-bind="{title: 'Chart 1'}"/>
                                     </div>
                                 </div>
                         </div>
@@ -48,7 +50,6 @@ import InfoModule from './stories/Dashboard/Components/InfoModule/InfoModule.vue
 import ProfileCard from './stories/Dashboard/Components/ProfileCard/ProfileCard.vue'; 
 import './assets/bootstrap-4.1.3-dist/css/bootstrap-grid.min.css';
 import profileData from "./assets/profileData.json";
-import sampleData from "./assets/sampleData.json";
 
 export default { 
     name: "dashboard-layout",
@@ -62,10 +63,8 @@ export default {
         title: String
     }, 
    data(){
-      
         return{
-            data: profileData,
-            sample: sampleData
+            data: profileData
         }
       }
   
@@ -92,9 +91,7 @@ export default {
     padding: 35px 30px 35px 0;
    
 }
-.two-col{
-  width:50%;
-}
+
 .three-col{
     width: 33%;
 }
@@ -108,10 +105,5 @@ iframe.sb-show-main.sb-main-padded{
 }
 .card{
     width: 100%;
-}
-
-p{ 
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
 }
 </style>

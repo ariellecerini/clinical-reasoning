@@ -1,0 +1,101 @@
+
+:root {
+    /*color for UI*/
+    --dkOrange: #ef6a42;
+    --orange: #ffeed6;
+    --ltOrange: #fdf4e7;
+    --dkTeal: #115f6c;
+    --teal: #d7f4f5;
+    --ltTeal: #edfeff;
+    --dkBlue: #2f3b51;
+    --blue: #dbe6f8;
+    --ltBlue: #fafafa;
+    --gray1: #f4f4f4;
+    --gray2: #d8d8d8;
+    --gray3: #727272;
+    --gray4: #5d5d5d;
+    --black: #333333;
+    --white: #fff;
+  
+    /*background-colors*/
+    --windowbgColor: #f4f4f4;
+    --appBgColor: var(--gray1);
+  
+    /*text colors*/
+    --bodyCopy: var(--black);
+    --headLineCopy: var(--black);
+    --headLineCopyLt: var(--white);
+  
+    /*conditional colors*/
+    --suggestionDark: var(--dkOrange);
+    --suggestionLight: var(--ltOrange);
+    --adherenceDark: var(--dkTeal);
+    --adherenceLight: var(--ltTeal);
+  
+    /*container sizes*/
+    --deviceContainer: 420px;
+  
+    /*border styling*/
+    --borderRadius: 5pt;
+  
+    /*object shadow styling*/
+    --shadowStyleOne: 0 1pt 2pt #00000014;
+    --shadowStyleTwo: 0 0 3px #00000029;
+    --shadowStyleThree: 0 0 3px #00000016;
+    --shadowStyleFour: 0 0.125rem 0.5rem rgb(0 0 0 / 10%),
+      0 0.0625rem 0.125rem rgb(0 0 0 / 6%);
+    --shadowStyleFive: 3pt 3pt 8pt #0000000a;
+    --shadowStyleSix: 0pt 1pt 2pt #0000000a;
+  
+    /*navbar*/
+    --navLinkColor: var(--black);
+    --navOpenBgColor: var(--gray1);
+    --navBannerBgColor: var(--white);
+  
+    /*font-specifications*/
+    --baseFontSize: 12pt;
+    --fontFamily: "IBM Plex Sans", sans-serif;
+  
+    /*card styling*/
+    --cardShadow: 0 3pt 6pt #00000029;
+    --cardBackground: var(--white);
+  
+    /*multi-view slider*/
+    --btmPadding: 4%;
+  
+    /*with image*/
+    --spaceBtwnImage: 5%;
+  
+    /*without image*/
+    --spaceBtwnNImage: 6%;
+  
+    /*single view slider*/
+    --cardBorderRadius: 10pt;
+
+    /*menu styling*/ 
+    --menuBackground: var(--white);
+    --sidePanelBackground: var(--white);
+  }
+
+body{
+    background: var(--appBgColor);
+}
+
+.navitem .bg-primary .rounded .navitem-active{
+
+    background-color: var(--appBgColor);
+    box-shadow: inset 4px 0px 5px #00000029;
+    border-radius: 13px 0px 0px 13px;
+}
+
+p{
+  font-weight: 300; 
+}
+
+
+/* .menu-item{
+
+    background-color: var(--appBgColor);
+    box-shadow: inset 4px 0px 5px #00000029;
+    border-radius: 13px 0px 0px 13px;
+} */

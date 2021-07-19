@@ -18,17 +18,17 @@
                                         <profile-card :profile='data'/>
                                     </div>
                                      <div class="four-col">
-                                        <info-module v-bind="{title: 'Chart 1', content: data}"/>
+                                        <info-module v-bind="{title: 'Chart 1', content: sample}"/>
                                     </div>
                                      <div class="four-col">
-                                        <info-module v-bind="{title: 'Chart 1', content: data}"/>
+                                        <info-module v-bind="{title: 'Chart 1', content: sample}"/>
                                     </div>
                                      
                               
                                 </div>
                                 <div class="row dashboard bodycontent">
                                     <div style="width: 66%; padding: 0;">
-                                        <info-module v-bind="{title: 'Chart 1'}"/>
+                                        <info-module v-bind="{title: 'Chart 1', content: ''}"/>
                                     </div>
                                     <div style="width: 33%;">
                                         <info-module v-bind="{title: 'Chart1'}"/>
@@ -62,7 +62,6 @@ export default {
         title: String
     }, 
    data(){
-      
         return{
             data: profileData,
             sample: sampleData
@@ -111,7 +110,7 @@ iframe.sb-show-main.sb-main-padded{
 }
 
 p{ 
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 </style>
